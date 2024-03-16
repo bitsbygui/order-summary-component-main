@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;  
+
+}
+
+html {
+    background:hsl(225, 100%, 94%);
+}
+
+body {
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color:white;
+    max-width: 450px;
+    border-radius: 1rem;
+    box-shadow: 0 40px 40px -20px hsla(224, 23%, 55%, 0.212) ;    
+}
+
+.hero{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.summary-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.summary-order h1{
+    color: hsl(223, 47%, 23%);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.9rem;
+}
+
+.description {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 1.060rem;
+}
+
+section .plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 2rem 0;
+    padding: 1.5rem 1.5rem;
+    background: #f8f9fe;
+    width: 90%;
+    border-radius: 0.8rem;
+    
+}
+em {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-style: normal;
+    
+}
+.annual-plan {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.price span{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.change {
+    color:hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.change:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    border: 0;
+    border-radius: 0.8rem;
+    width: 90%;
+    padding: 1rem 0rem;
+    color:white;
+    font-weight: 900;
+    box-shadow: 0 20px 20px rgba(56, 42, 225, 0.190291);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    transition: background 0.3s;
+
+}
+
+button:hover{
+    background-color:#766CF1;
+}
+
+.cancel-order {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    transition: color 0.3s;
+
+}
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+  }
+
+@media screen and (max-width: 650px) {
+    body {
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    section {
+        padding: 0 3rem;
+    }
+}
+
